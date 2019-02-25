@@ -9,7 +9,7 @@
 # Homebrew stuff (for Mac OS/X) - this has to be before the aliases so that we can do things like [ `which ack` ] in there
 [ -d ~/.homebrew/bin ] && PATH=~/.homebrew/bin:$PATH
 
-# added by Anaconda3 5.2.0 installer
+# added by Anaconda3 installer
 [[ -d /anaconda3/bin ]] && export PATH="/anaconda3/bin:$PATH"
 
 # Alias definitions.
@@ -42,21 +42,6 @@ fi
 source_directory ~/.bash_completion.d
 source_if_exists ~/.bash_prompt
 
-# Amazon EC2 stuff
-for i in ~/.ec2rc ~/Projects/kahuna/etc/ec2/ec2rc; do source_if_exists $i; done
-
-# Oracle stuff
-if [ -d /opt/oracle/instantclient_10_2 ]; then
-  LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/oracle/instantclient_10_2
-  ORACLE_HOME=/opt/oracle/instantclient_10_2
-fi
-
-# Postgres stuff (for Mac OS/X)
-HOME_BREW_POSTGRES_DIR=/opt/local/lib/postgresql84/bin/
-if [ -d $HOME_BREW_POSTGRES_DIR ]; then
-  PATH=${HOME_BREW_POSTGRES_DIR}:${PATH}
-fi
-
 # RVM Stuff
 if [[ -d ~/.rvm ]]; then
   PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
@@ -77,7 +62,4 @@ export FIGNORE="CVS:.swp:.svn"
 export PATH=$PATH:~/bin:$JAVA_HOME/bin
 export LD_LIBRARY_PATH
 export LANG=en_AU.UTF-8 # Setup the LANG so that gcc doesn't spit a^ characters instead of '
-export ORACLE_HOME
 
-# Allow gistit to post gists as jamiecook
-export GISTIT_TOKEN="5522c05955ac0cbf22c8c73c26b7c51fdc4783a2"

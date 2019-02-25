@@ -1,3 +1,4 @@
+## TODO: bootstrap for my ubuntu set up, bootstrap for my mac set up
 #!/bin/bash
 
 install_bin_file_from_url() {

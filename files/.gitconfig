@@ -7,8 +7,8 @@
   logg = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold cyan)%h%C(reset) - %C(yellow)[%ar]%C(reset) %C(white)%s%C(reset)%C(green bold)%d%C(reset) %C(dim white)- %aN%C(reset)'
   hist = log --pretty=format:'%C(bold cyan)%h%C(reset) - %C(yellow)[%ad]%C(reset) %C(white)%s%C(green bold)%d%C(reset) %C(dim white)- %aN%C(reset)'
 [user]
-  name  = Jamie Cook
-  email = jamie.cook@veitchlister.com.au
+  name  = Jan Zill
+  email = jan.zill@veitchlister.com.au
 [color]
   diff = auto
   status = auto
@@ -17,10 +17,10 @@
   excludesfile = ~/.gitignore
   autocrlf = input
 [github]
-  user = jamiecook
+  user = janzill
 [push]
   default = current 
 [format]
   pretty = oneline
 [hub]
-	protocol = ssh
+  protocol = ssh
