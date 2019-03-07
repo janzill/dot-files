@@ -10,6 +10,8 @@ alias ed="vim ~/.dot-files/files && source ~/.bashrc"
 alias ep="vim ~/.dot-files/files/.bash_prompt && source ~/.bash_prompt"
 alias ec="vim ~/.dot-files/files/.aliases/colours.sh && source ~/.dot-files/files/.bashrc"
 
+alias grep="grep --colour"
+
 alias cp="cp -i"
 [ `which ack` ] || alias ack='ack-grep'
 
@@ -34,8 +36,6 @@ if [ "$TERM" != "dumb" ]; then
 
     alias ll='ls -l'
     alias l='ls -CF'
-
-    #export GREP_OPTIONS='--color=auto'
 fi
 
 if [ -f "/Applications/MacVim.app/Contents/MacOS/Vim" ]; then
