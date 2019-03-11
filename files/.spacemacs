@@ -33,6 +33,7 @@ values."
    '(
      shell-scripts
      lua
+     latex
      ansible
      python
      yaml
