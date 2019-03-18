@@ -10,7 +10,7 @@
 [ -d ~/.homebrew/bin ] && PATH=~/.homebrew/bin:$PATH
 
 # added by Anaconda3 installer
-[[ -d /anaconda3/bin ]] && export PATH="/anaconda3/bin:$PATH"
+[[ -d ~/anaconda3/bin ]] && export PATH="~/anaconda3/bin:$PATH"
 
 # Alias definitions.
 source ~/.aliases/commands.sh
