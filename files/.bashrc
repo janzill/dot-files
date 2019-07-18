@@ -7,10 +7,10 @@
 [ -z "$PS1" ] && return
 
 # Homebrew stuff (for Mac OS/X) - this has to be before the aliases so that we can do things like [ `which ack` ] in there
-[ -d ~/.homebrew/bin ] && PATH=~/.homebrew/bin:$PATH
+# [ -d ~/.homebrew/bin ] && PATH=~/.homebrew/bin:$PATH
 
 # added by Anaconda3 installer
-[[ -d ~/anaconda3/bin ]] && export PATH="~/anaconda3/bin:$PATH"
+# [[ -d ~/anaconda3/bin ]] && export PATH="~/anaconda3/bin:$PATH"
 
 # Alias definitions.
 source ~/.aliases/commands.sh
