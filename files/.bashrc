@@ -42,18 +42,16 @@ fi
 source_directory ~/.bash_completion.d
 source_if_exists ~/.bash_prompt
 
-# RVM Stuff
-if [[ -d ~/.rvm ]]; then
-  PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-  source_if_exists ~/.rvm/scripts/rvm
-  rvm use default # This loads RVM into a shell session.
-fi
-
-[ `which brew` ] && source_if_exists `brew --prefix`/opt/chruby/share/chruby/chruby.sh
+## RVM Stuff
+#if [[ -d ~/.rvm ]]; then
+#  PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#  source_if_exists ~/.rvm/scripts/rvm
+#  rvm use default # This loads RVM into a shell session.
+#fi
 
 # Haskell binaries on the path please
-[ -d ~/Library/Haskell/bin ] && PATH=$PATH:~/Library/Haskell/bin
-[ -d ~/.local/bin ] && PATH=$PATH:~/.local/bin
+#[ -d ~/Library/Haskell/bin ] && PATH=$PATH:~/Library/Haskell/bin
+#[ -d ~/.local/bin ] && PATH=$PATH:~/.local/bin
 
 # Export all the things we've set up above
 export JAVA_HOME=/opt/jdk17
