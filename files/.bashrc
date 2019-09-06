@@ -118,11 +118,11 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # RVM Stuff
-if [[ -d ~/.rvm ]]; then
-    PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-    source_if_exists ~/.rvm/scripts/rvm
-    rvm use default # This loads RVM into a shell session.
-fi
+#if [[ -d ~/.rvm ]]; then
+#    PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#    source_if_exists ~/.rvm/scripts/rvm
+#    rvm use default # This loads RVM into a shell session.
+#fi
 
 # Export all the things we've set up above
 export JAVA_HOME=/opt/jdk17
