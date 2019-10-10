@@ -73,3 +73,9 @@ source_directory()
     source $file
   done
 }
+
+
+# pipenv jupyter lab
+alias pipenvjupyter="python -m pipenv run jupyter lab --notebook-dir=/mnt/c/Users/jan.zill/code"
+
+
